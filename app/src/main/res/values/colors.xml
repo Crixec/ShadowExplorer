@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorFolder">#F1C232</color>
+    <color name="colorFile">#666666</color>
+    <color name="colorUnknow">#FF0000</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextSecondary">#727779</color>
+    <color name="colorDivider">@android:color/holo_blue_light</color>
+    <color name="colorToolButton">#a9b7b7</color>
+</resources>

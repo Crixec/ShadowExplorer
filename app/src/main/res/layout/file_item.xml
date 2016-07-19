@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|start"
+    android:minHeight="48dp">
+
+    <ImageView
+        android:id="@+id/file_item_file_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:paddingLeft="2dp"
+        android:src="@drawable/fi_dir" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="35dp"
+        android:paddingStart="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/file_item_file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="FILE NAME"
+                android:textColor="@color/colorText"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/file_item_is_symlink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:text="->"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/file_item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/file_item_file_icon"
+            android:ellipsize="end"
+            android:enabled="false"
+            android:maxLines="1"
+            android:text="DETAIL"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
